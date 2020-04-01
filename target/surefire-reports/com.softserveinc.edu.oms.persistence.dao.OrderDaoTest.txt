@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.softserveinc.edu.oms.persistence.dao.OrderDaoTest
--------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.844 sec
