@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.301" errors="0" skipped="0" tests="7" name="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/romanborovets/webdev/SS-DevOps/oms"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/romanborovets/webdev/SS-DevOps/oms"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/4y/mw7h32nx4f9f_8tgndhckw000000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/romanborovets/.sdkman/candidates/maven/3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/romanborovets/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="/Users/romanborovets/.m2/repository"/>
+    <property name="os.version" value="10.15.1"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/romanborovets"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="romanborovets"/>
+    <property name="java.class.path" value="/Users/romanborovets/.sdkman/candidates/maven/3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Users/romanborovets/.sdkman/candidates/java/7u79/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -D maven.repo.local=/Users/romanborovets/.m2/repository -s /private/var/folders/4y/mw7h32nx4f9f_8tgndhckw000000gn/T/release-settings2181786785527493525.xml clean verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="/Users/romanborovets/Library/Java/Extensions:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/resources.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/rt.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/sunrsasign.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/jsse.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/jce.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/charsets.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/lib/jfr.jar:/Users/romanborovets/.sdkman/candidates/java/7u79/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/romanborovets/.sdkman/candidates/maven/3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.113" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testFindByRegionName"/>
+  <testcase time="0.044" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testFindAll"/>
+  <testcase time="0.028" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testFindByOneOfCriterions"/>
+  <testcase time="0.028" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testFindByID"/>
+  <testcase time="0.033" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testInsertOrUpdate"/>
+  <testcase time="0.029" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testDelete"/>
+  <testcase time="0.026" classname="com.softserveinc.edu.oms.persistence.dao.RegionDaoTest" name="testContextFile"/>
+</testsuite>

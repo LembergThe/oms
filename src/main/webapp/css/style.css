@@ -1,0 +1,264 @@
+html {
+	height: 100%;
+	margin: 20px 0 0 0;
+}
+
+* {
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000;
+	background: #999 url(grey.jpg) repeat scroll;
+}
+
+a,a:hover {
+	outline: none;
+	text-decoration: underline;
+	color: #00C;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	list-style-type: circle;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+}
+
+ol {
+	margin: 8px 0 22px 20px;
+}
+
+ol li {
+	margin: 0 0 11px 0;
+}
+
+#main,#logo,#menubar,#site_content,#footer {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	border-bottom: 0;
+}
+
+#main {
+	background: rgba(170, 170, 170, 0.5);
+	border: 1px solid rgba(170, 170, 170, 0.3);
+	width: 800px;
+	border-radius: 12px;
+	padding: 5px 0 5px 0;
+}
+
+#logo {
+	width: 777px;
+	position: relative;
+	height: 100px;
+	background: #FFF;
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+}
+
+#logo h1,#logo h2 {
+	font: normal 300% 'century gothic', arial, sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	padding: 22px 0 0 0;
+	color: #777;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+#logo h1 {
+	padding-left: 35px;
+}
+
+#logo h2 {
+	font-size: 100%;
+	padding: 4px 60px;
+	color: #000;
+}
+
+#menubar {
+	width: 777px;
+	border-top: 0;
+	border-bottom: 0;
+	background: #FFF;
+	height: 45px;
+}
+
+#nav {
+	width: 770px;
+	margin: 0;
+	padding-left: 7px;
+	float: left;
+	background: url(navshadow.gif) repeat-x 4px 100%;
+	padding-bottom: 20px;
+}
+
+#nav li {
+	list-style-type: none;
+	float: left;
+	margin: 0 2px 0 2px;
+	padding: 0 0 0 10px;
+	border-bottom: 1px solid #999;
+	background: url(tabgrey.gif) #c0c0c0 top left no-repeat;
+}
+
+#nav li a {
+	color: #666;
+	background: url(tabgrey.gif) transparent top right no-repeat;
+	padding: 0 10px 0 0;
+}
+
+#nav li a:link,#nav li a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#nav li a:hover,#nav li a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+#nav li.cur,#nav li.over,#nav li:hover {
+	background: url(tabblack.png) #3375b2 top left no-repeat;
+	border-bottom: 1px solid #036;
+}
+
+ul#nav li.cur a,ul#nav li.over a,ul#nav li:hover a {
+	text-decoration: none;
+	background: url(tabblack.png) transparent top right no-repeat;
+}
+
+#nav li.cur a,#nav li.cur a:hover,#nav li.cur:hover a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#nav li.spec,#nav li.spec a,#nav li.spec a:hover,#nav li.spec:hover a {
+	color: #000;
+	text-decoration: none;
+	float: right;
+	padding-right: 10px;
+	list-style-type: none;
+	border: 0;
+	background: #FFF;
+}
+
+#nav li.spec img {
+	width: 12px;
+	height: 12px;
+}
+
+#site_content {
+	border-top: 0;
+	width: 724px;
+	overflow: hidden;
+	margin: 0 auto 0 auto;
+	padding: 0px 20px 20px 33px;
+	background: #FFF url(content.png) repeat-y;
+}
+
+#content {
+	text-align: left;
+	width: 650px;
+	padding: 0;
+}
+
+#footer {
+	width: 777px;
+	font: normal 100% "lucida sans unicode";
+	height: 15px;
+	padding: 7px 0 5px 0;
+	text-align: center;
+	background: #555 url(menu.png) repeat-x;
+	color: #CDC090;
+	letter-spacing: 0.1em;
+	border-bottom: 1px solid #000;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	font-size: 8px;
+}
+
+#footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #CDC090;
+	text-decoration: none;
+}
+
+#list {
+	font-size: 13px;
+	color: #030712;
+	line-height: 30px;
+	letter-spacing: -1px;
+}
+
+#list table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+#list a {
+	text-decoration: none;
+	color: #000;
+}
+
+#list a:HOVER {
+	text-decoration: none;
+	color: #777;
+}
+
+#list th {
+	background-color: #ccc;
+}
+
+#list table,#list th,#list tr,#list td {
+	text-align: center;
+	border: 1px solid black;
+}
+
+#list span {
+	font-size: 17px;
+	color: #000;
+}
+
+#list h2 {
+	color: #CDC090;
+}
+
+.odd {
+	background: #f8f8f4;
+}
+
+#edit {
+	font-size: 13px;
+	color: #030712;
+	line-height: 30px;
+	letter-spacing: -1px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#edit table,#edit th,#edit tr,#edit td {
+	border: 0px;
+	margin: 0 0 0 0;
+	text-align: left;
+}
+
+.error {
+	color: red;
+}

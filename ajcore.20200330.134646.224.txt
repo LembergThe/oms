@@ -1,0 +1,487 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.9.RC3 built on Wednesday Jun 30, 2010 at 15:46:30 GMT
+---- Dump Properties ---
+Dump file: ajcore.20200330.134646.224.txt
+Dump reason: org.aspectj.apache.bcel.classfile.ClassFormatException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:412)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:452)
+	at org.aspectj.weaver.World.resolve(World.java:298)
+	at org.aspectj.weaver.World.resolve(World.java:211)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:95)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:807)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:255)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:625)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.ResolvedType.collectInterTypeMungers(ResolvedType.java:1390)
+	at org.aspectj.weaver.ResolvedType.getInterTypeMungersIncludingSupers(ResolvedType.java:1371)
+	at org.aspectj.weaver.ResolvedType.checkInterTypeMungers(ResolvedType.java:1442)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:791)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:636)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:416)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1022)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:181)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:363)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:240)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:360)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib
+java.vm.version=25.141-b15
+gopherProxySet=false
+maven.multiModuleProjectDirectory=/Users/romanborovets/webdev/SS-DevOps/oms
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+guice.disable.misplaced.annotation.check=true
+path.separator=:
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=US
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/Users/romanborovets/webdev/SS-DevOps/oms
+java.runtime.version=1.8.0_141-b15
+java.awt.graphicsenv=sun.awt.CGraphicsEnvironment
+java.endorsed.dirs=/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/endorsed
+os.arch=x86_64
+java.io.tmpdir=/var/folders/4y/mw7h32nx4f9f_8tgndhckw000000gn/T/
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Mac OS X
+classworlds.conf=/Users/romanborovets/.sdkman/candidates/maven/current/bin/m2.conf
+sun.jnu.encoding=UTF-8
+java.library.path=/Users/romanborovets/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.15.1
+http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+user.home=/Users/romanborovets
+user.timezone=Europe/Kiev
+java.awt.printerjob=sun.lwawt.macosx.CPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.8
+java.class.path=/Users/romanborovets/.sdkman/candidates/maven/current/boot/plexus-classworlds-2.5.2.jar
+user.name=romanborovets
+java.vm.specification.version=1.8
+sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher package
+java.home=/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre
+sun.arch.data.model=64
+user.language=en
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.lwawt.macosx.LWCToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_141
+java.ext.dirs=/Users/romanborovets/Library/Java/Extensions:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+sun.boot.class.path=/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/resources.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/rt.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/sunrsasign.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jsse.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jce.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/charsets.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jfr.jar:/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/classes
+java.vendor=Oracle Corporation
+maven.home=/Users/romanborovets/.sdkman/candidates/maven/current
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.endian=little
+socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16
+ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+sun.cpu.isalist=
+---- Command Line ---
+-outxml
+-source
+1.6
+-target
+1.6
+-classpath
+/Users/romanborovets/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/Users/romanborovets/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/romanborovets/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/Users/romanborovets/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar:/Users/romanborovets/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar:/Users/romanborovets/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar:/Users/romanborovets/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar:/Users/romanborovets/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar:/Users/romanborovets/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/Users/romanborovets/.m2/repository/commons-digester/commons-digester/1.7/commons-digester-1.7.jar:/Users/romanborovets/.m2/repository/commons-logging/commons-logging/1.0.2/commons-logging-1.0.2.jar:/Users/romanborovets/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/romanborovets/.m2/repository/eclipse/jdtcore/3.1.0/jdtcore-3.1.0.jar:/Users/romanborovets/.m2/repository/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA.jar:/Users/romanborovets/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/romanborovets/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/romanborovets/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/romanborovets/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/Users/romanborovets/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/Users/romanborovets/.m2/repository/jfree/jcommon/1.0.15/jcommon-1.0.15.jar:/Users/romanborovets/.m2/repository/jfree/jfreechart/1.0.12/jfreechart-1.0.12.jar:/Users/romanborovets/.m2/repository/junit/junit/4.7/junit-4.7.jar:/Users/romanborovets/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/romanborovets/.m2/repository/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar:/Users/romanborovets/.m2/repository/net/sf/jasperreports/jasperreports/4.0.1/jasperreports-4.0.1.jar:/Users/romanborovets/.m2/repository/net/sourceforge/jtds/jtds/1.2.4/jtds-1.2.4.jar:/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar:/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar:/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar:/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-servlet/2.2.2/tiles-servlet-2.2.2.jar:/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar:/Users/romanborovets/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar:/Users/romanborovets/.m2/repository/org/aspectj/aspectjweaver/1.6.8/aspectjweaver-1.6.8.jar:/Users/romanborovets/.m2/repository/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar:/Users/romanborovets/.m2/repository/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar:/Users/romanborovets/.m2/repository/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar:/Users/romanborovets/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.3/jackson-core-asl-1.8.3.jar:/Users/romanborovets/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.3/jackson-mapper-asl-1.8.3.jar:/Users/romanborovets/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar:/Users/romanborovets/.m2/repository/org/hibernate/hibernate-core/3.6.5.Final/hibernate-core-3.6.5.Final.jar:/Users/romanborovets/.m2/repository/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar:/Users/romanborovets/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar:/Users/romanborovets/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.10/jcl-over-slf4j-1.5.10.jar:/Users/romanborovets/.m2/repository/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar:/Users/romanborovets/.m2/repository/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-aop/3.0.5.RELEASE/spring-aop-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-context/3.0.5.RELEASE/spring-context-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-context-support/3.0.5.RELEASE/spring-context-support-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-expression/3.0.5.RELEASE/spring-expression-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-orm/3.0.5.RELEASE/spring-orm-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-test/3.0.5.RELEASE/spring-test-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-tx/3.0.5.RELEASE/spring-tx-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/spring-webmvc/3.0.5.RELEASE/spring-webmvc-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/roo/org.springframework.roo.annotations/1.0.2.RELEASE/org.springframework.roo.annotations-1.0.2.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-acl/3.0.5.RELEASE/spring-security-acl-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-config/3.0.5.RELEASE/spring-security-config-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-core/3.0.5.RELEASE/spring-security-core-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-taglibs/3.0.5.RELEASE/spring-security-taglibs-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-web/3.0.5.RELEASE/spring-security-web-3.0.5.RELEASE.jar:/Users/romanborovets/.m2/repository/xml-apis/xml-apis/1.3.02/xml-apis-1.3.02.jar:/Users/romanborovets/webdev/SS-DevOps/oms/target/classes
+-d
+/Users/romanborovets/webdev/SS-DevOps/oms/target/classes
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/util/ProductSortPropertiesFactory.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/PageableParameters.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/product/model/ListProductModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/OrderService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/unifiederrorpage/ErrorInfo.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/ServiceForPaging.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/PageJspType.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/PageJspType.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/AbstractListUsersController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/ControlerErrorException.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/model/UserModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/unifiederrorpage/ErrorController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IRoleDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/IDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IDimensionService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/DimensionDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/OrderDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/Order.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/AddUserController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IOrderService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/ICustomerTypeService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/PagingResolver.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/UserService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/util/ProductSortResolver.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/model/ProductModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/ProductService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IUserService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/EditUserController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/OrderItemViewController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/DimensionTypesEnum.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/utils/CardValidator.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/util/UserAvailability.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IRegionDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/PageableParameters.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/AbstractListItemsController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/util/OrderItemParameters.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/HibernatePageableDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/security/LoginController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IRoleService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/AbstractEntity.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/AjaxValidatorController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/OrderItemsLinesNumberModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/ParameterNames.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/user/UserSelectWayCondition.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/Service.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/merchandiserpages/MerchandiserPageParameters.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IOrderStatusService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/security/UserSecurityData.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/AddEditUserValidator.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/product/ProductController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/ListItemsController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/PageActions.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/user/UserSortPropertiesFactory.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/Dimension.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/PageModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/ListRecordResponse.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/ParameterPair.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/ICreditCardTypeDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IDimensionDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/PageModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/util/ValidatorRegex.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemsmanagement/ItemManagementUtils.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/OrderStatus.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/AddProductController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IRegionService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IOrderStatusDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemsmanagement/ItemManagementController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/user/UserSelectField.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/SearchModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/CustomerType.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IOrderDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/ProductDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/CreditCardType.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/product/model/ProductSortModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/RoleDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/RegionService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/StringWrapper.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/abstracthandlers/AbstractCRUDHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/OrderSatusTypes.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IProductDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/util/pageable/PageShowElements.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IOrderItemDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/OrderItemDBController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/OrderStatusService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/temporarydata/TemporaryOrderData.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/User.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/CreditCardTypeDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/HibernateDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/security/UserTracker.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/temporarydata/ITemporaryOrderData.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/Product.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/IHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/abstracthandlers/AbstractHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/order/OrderController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/ParametersValidator.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/order/SearchFilterOptions.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/ListUsersController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/SortProperties.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/temporarydata/beans/TemporaryOrderItem.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/RoleService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/OrerItemIterationController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/merchandiserpages/controlers/MerchandiserShowPageControler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/ReportListProductController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/merchandiserpages/handlers/MerchandiserPageableHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/PageShowElements.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IOrderItemService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/IUserDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/AbstractFormProductController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/AbstractPageableControler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/UserDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/Region.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/Role.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/interfaces/ICustomerTypeDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/ReportListUserController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/util/SessionExplorer.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/CustomerTypeDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/ControlerRedirectErrorException.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/merchandiserpages/handlers/MerchandiserEditHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/abstracthandlers/AbstractPageableHandler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/temporarydata/beans/TemporaryOrder.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/OrderItemService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/userinfo/UserInfoController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/OrderStatusDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/interfaces/IProductService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/domain/entities/OrderItem.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/util/ProductSelectField.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/params/SelectCondition.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/order/OrderSortProperties.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/OrderItemsPageModel.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/AbstractControler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/AbstractFormUserController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/itemManagement/EditProductController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/model/temporarydata/TemporaryListOrderData.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/OrderItemDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/service/implementation/DimensionService.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/OrderItemControllerUtil.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/merchandiserpages/controlers/MerchandiserEditControler.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/user/util/UserSortResolver.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/orderitem/OrderItemEditController.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/ParameterPair.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/IPageableDao.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/web/pageablecontroler/util/PageActions.java
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/RegionDao.java
+---- Full Classpath ---
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/resources.jar(3505340 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/rt.jar(66815098 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/sunrsasign.jar(missing)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jsse.jar(648816 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jce.jar(116446 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/charsets.jar(3135391 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/jfr.jar(560581 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/classes(missing)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/sunec.jar(42185 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/nashorn.jar(2022735 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/cldrdata.jar(3860502 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/jfxrt.jar(18606587 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/dnsns.jar(8286 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/localedata.jar(1179093 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/sunjce_provider.jar(280161 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/sunpkcs11.jar(251327 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/jaccess.jar(44516 bytes)
+/Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/ext/zipfs.jar(68924 bytes)
+/System/Library/Java/Extensions/MRJToolkit.jar(12841 bytes)
+/Users/romanborovets/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar(443432 bytes)
+/Users/romanborovets/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar(4467 bytes)
+/Users/romanborovets/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar(43581 bytes)
+/Users/romanborovets/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar(192035 bytes)
+/Users/romanborovets/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar(1551468 bytes)
+/Users/romanborovets/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar(287192 bytes)
+/Users/romanborovets/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar(1130070 bytes)
+/Users/romanborovets/.m2/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar(231320 bytes)
+/Users/romanborovets/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar(559366 bytes)
+/Users/romanborovets/.m2/repository/commons-digester/commons-digester/1.7/commons-digester-1.7.jar(139966 bytes)
+/Users/romanborovets/.m2/repository/commons-logging/commons-logging/1.0.2/commons-logging-1.0.2.jar(26388 bytes)
+/Users/romanborovets/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar(313898 bytes)
+/Users/romanborovets/.m2/repository/eclipse/jdtcore/3.1.0/jdtcore-3.1.0.jar(3555707 bytes)
+/Users/romanborovets/.m2/repository/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA.jar(644148 bytes)
+/Users/romanborovets/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar(2497 bytes)
+/Users/romanborovets/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar(414240 bytes)
+/Users/romanborovets/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar(105112 bytes)
+/Users/romanborovets/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar(15071 bytes)
+/Users/romanborovets/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar(47433 bytes)
+/Users/romanborovets/.m2/repository/jfree/jcommon/1.0.15/jcommon-1.0.15.jar(309294 bytes)
+/Users/romanborovets/.m2/repository/jfree/jfreechart/1.0.12/jfreechart-1.0.12.jar(1368681 bytes)
+/Users/romanborovets/.m2/repository/junit/junit/4.7/junit-4.7.jar(232354 bytes)
+/Users/romanborovets/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar(391834 bytes)
+/Users/romanborovets/.m2/repository/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar(787920 bytes)
+/Users/romanborovets/.m2/repository/net/sf/jasperreports/jasperreports/4.0.1/jasperreports-4.0.1.jar(3089349 bytes)
+/Users/romanborovets/.m2/repository/net/sourceforge/jtds/jtds/1.2.4/jtds-1.2.4.jar(305038 bytes)
+/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar(35898 bytes)
+/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar(161001 bytes)
+/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar(50740 bytes)
+/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-servlet/2.2.2/tiles-servlet-2.2.2.jar(59739 bytes)
+/Users/romanborovets/.m2/repository/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar(24466 bytes)
+/Users/romanborovets/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar(116038 bytes)
+/Users/romanborovets/.m2/repository/org/aspectj/aspectjweaver/1.6.8/aspectjweaver-1.6.8.jar(1627874 bytes)
+/Users/romanborovets/.m2/repository/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar(192035 bytes)
+/Users/romanborovets/.m2/repository/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar(1551468 bytes)
+/Users/romanborovets/.m2/repository/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar(22994 bytes)
+/Users/romanborovets/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.3/jackson-core-asl-1.8.3.jar(227122 bytes)
+/Users/romanborovets/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.3/jackson-mapper-asl-1.8.3.jar(667087 bytes)
+/Users/romanborovets/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar(71283 bytes)
+/Users/romanborovets/.m2/repository/org/hibernate/hibernate-core/3.6.5.Final/hibernate-core-3.6.5.Final.jar(3113051 bytes)
+/Users/romanborovets/.m2/repository/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar(366592 bytes)
+/Users/romanborovets/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar(100884 bytes)
+/Users/romanborovets/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.10/jcl-over-slf4j-1.5.10.jar(17289 bytes)
+/Users/romanborovets/.m2/repository/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar(23659 bytes)
+/Users/romanborovets/.m2/repository/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar(9692 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-aop/3.0.5.RELEASE/spring-aop-3.0.5.RELEASE.jar(321190 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar(53082 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar(555410 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-context/3.0.5.RELEASE/spring-context-3.0.5.RELEASE.jar(668861 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-context-support/3.0.5.RELEASE/spring-context-support-3.0.5.RELEASE.jar(100870 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar(382442 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-expression/3.0.5.RELEASE/spring-expression-3.0.5.RELEASE.jar(169752 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar(385712 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-orm/3.0.5.RELEASE/spring-orm-3.0.5.RELEASE.jar(334327 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-test/3.0.5.RELEASE/spring-test-3.0.5.RELEASE.jar(205278 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-tx/3.0.5.RELEASE/spring-tx-3.0.5.RELEASE.jar(231922 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE.jar(395587 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/spring-webmvc/3.0.5.RELEASE/spring-webmvc-3.0.5.RELEASE.jar(418977 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/roo/org.springframework.roo.annotations/1.0.2.RELEASE/org.springframework.roo.annotations-1.0.2.RELEASE.jar(11209 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-acl/3.0.5.RELEASE/spring-security-acl-3.0.5.RELEASE.jar(78088 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-config/3.0.5.RELEASE/spring-security-config-3.0.5.RELEASE.jar(185716 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-core/3.0.5.RELEASE/spring-security-core-3.0.5.RELEASE.jar(311038 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-taglibs/3.0.5.RELEASE/spring-security-taglibs-3.0.5.RELEASE.jar(18883 bytes)
+/Users/romanborovets/.m2/repository/org/springframework/security/spring-security-web/3.0.5.RELEASE/spring-security-web-3.0.5.RELEASE.jar(242833 bytes)
+/Users/romanborovets/.m2/repository/xml-apis/xml-apis/1.3.02/xml-apis-1.3.02.jar(194205 bytes)
+/Users/romanborovets/webdev/SS-DevOps/oms/target/classes(6 entries)
+---- Compiler Messages ---
+info directory classpath entry does not exist: /Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/lib/sunrsasign.jar
+info zipfile classpath entry does not exist: /Users/romanborovets/.sdkman/candidates/java/8u141-oracle/jre/classes
+info Pipelining compilation
+error at (no source information available)
+/Users/romanborovets/webdev/SS-DevOps/oms/src/main/java/com/softserveinc/edu/oms/persistence/dao/concrete/RegionDao.java:0::0 Internal compiler error
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:412)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:452)
+	at org.aspectj.weaver.World.resolve(World.java:298)
+	at org.aspectj.weaver.World.resolve(World.java:211)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:95)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:807)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:255)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:625)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.ResolvedType.collectInterTypeMungers(ResolvedType.java:1390)
+	at org.aspectj.weaver.ResolvedType.getInterTypeMungersIncludingSupers(ResolvedType.java:1371)
+	at org.aspectj.weaver.ResolvedType.checkInterTypeMungers(ResolvedType.java:1442)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:791)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:636)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:416)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1022)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:181)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:363)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:240)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:360)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+abort ABORT -- (ClassFormatException) File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java/lang/CharSequence.class': Invalid byte tag in constant pool: 18
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:412)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:373)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:452)
+	at org.aspectj.weaver.World.resolve(World.java:298)
+	at org.aspectj.weaver.World.resolve(World.java:211)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:95)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:807)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:255)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:625)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:76)
+	at org.aspectj.weaver.ResolvedType.collectInterTypeMungers(ResolvedType.java:1390)
+	at org.aspectj.weaver.ResolvedType.getInterTypeMungersIncludingSupers(ResolvedType.java:1371)
+	at org.aspectj.weaver.ResolvedType.checkInterTypeMungers(ResolvedType.java:1442)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:791)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.weaveInterTypeDeclarations(AjLookupEnvironment.java:636)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.doPendingWeaves(AjLookupEnvironment.java:416)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:213)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1022)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:181)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:363)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:240)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:360)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+---- org.aspectj.weaver.bcel.BcelWorld@6ac4944a ----
+Shadow mungers:
+Empty
+Type mungers:
+Empty
+Late Type mungers:
+Empty

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="OMS" />
+		<put-attribute name="tabs" value="info" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.html" />
+		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.html" />
+	</definition>
+
+	<definition name="userinfo" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/userInfo.jsp" />
+		<put-attribute name="tabs" value="info" />
+	</definition>
+
+
+	<definition name="listUsers" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/listUsers.jsp" />
+		<put-attribute name="tabs" value="admin" />
+	</definition>
+
+	<definition name="listItems" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemsManagement/listItems.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="itemForm" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemsManagement/itemForm.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="productDeleteError" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemsManagement/productDeleteError.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="reportUsers" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/reportUsers.jsp" />
+		<put-attribute name="tabs" value="admin" />
+	</definition>
+
+	<definition name="reportItems" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemsManagement/reportItems.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="userDeleteError" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/userDeleteError.jsp" />
+		<put-attribute name="tabs" value="admin" />
+	</definition>
+
+	<definition name="userForm" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/userForm.jsp" />
+		<put-attribute name="tabs" value="admin" />
+	</definition>
+
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/login/login.jsp" />
+		<put-attribute name="tabs" value="none" />
+	</definition>
+
+	<definition name="order" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/order.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="listOrderItems" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/orderItems/list.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="listError" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orderItems/listError.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="productsList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemManagement/productList.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="productAddEdit" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/itemManagement/addProduct.jsp" />
+		<put-attribute name="tabs" value="items" />
+	</definition>
+
+	<definition name="errorPage" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/error.jsp" />
+		<put-attribute name="tabs" value="none" />
+	</definition>
+
+	<definition name="listViewOrderItems" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orderItems/listView.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="merchandiserWithoutAjax" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/merchandiser/merchandiserWithoutAjax.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="merchandiserWithAjax" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/merchandiser/merchandiserWithAjax.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+
+	<definition name="listProducts" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/product/listProducts.jsp" />
+		<put-attribute name="tabs" value="orders" />
+	</definition>
+</tiles-definitions>
