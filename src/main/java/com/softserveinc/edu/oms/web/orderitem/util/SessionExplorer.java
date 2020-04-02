@@ -1,7 +1,7 @@
 //
 // SessionExplorer
 //
-// 1 вер. 2011
+// 1 . 2011
 //
 package com.softserveinc.edu.oms.web.orderitem.util;
 

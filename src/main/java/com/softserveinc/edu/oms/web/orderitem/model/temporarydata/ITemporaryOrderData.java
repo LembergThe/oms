@@ -1,7 +1,7 @@
 //
 // ITemporaryOrderService
 //
-// 29 ρεπο. 2011
+// 29 . 2011
 //
 package com.softserveinc.edu.oms.web.orderitem.model.temporarydata;
 

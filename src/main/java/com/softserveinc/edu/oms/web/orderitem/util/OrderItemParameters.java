@@ -1,7 +1,7 @@
 //
 // OrderItemParameters
 //
-// 25 ρεπο. 2011
+// 25 . 2011
 //
 package com.softserveinc.edu.oms.web.orderitem.util;
 
