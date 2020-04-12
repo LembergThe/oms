@@ -10,7 +10,7 @@
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<!--<property name="hibernate.connection.url">jdbc:jtds:sqlserver://streamer2005.softserveinc.com/_055_OMS_test;instance=tc;</property>-->
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/lv316oms_test</property>
+		<property name="hibernate.connection.url">jdbc:mysql://10.0.2.2/lv316oms_test</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 

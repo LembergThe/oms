@@ -39,7 +39,7 @@
 		</repository>
 
 		<repository>
-			<id>maven-proxy</id>
+			<id>nexus</id>
 			<url>${MAVEN_NEXUS_URL}</url>
 		</repository>
 	</repositories>
