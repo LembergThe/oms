@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.softserveinc</groupId>
 	<artifactId>edu</artifactId>
 	<name>OMS</name>
 	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<version>1.0.2-BUILD-SNAPSHOT</version>
 	<properties>
-		<java-version>1.6</java-version>
+		<java-version>1.7</java-version>
 		<org.springframework-version>3.0.5.RELEASE</org.springframework-version>
 		<org.springframework.roo-version>1.0.2.RELEASE</org.springframework.roo-version>
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 	</properties>
-
 	<distributionManagement>
 		<repository>
 			<id>nexus</id>
@@ -33,10 +31,11 @@
 		</site>
   	</distributionManagement>
 	<scm>
-		<connection>scm:git:git@github.com:user/project.git</connection>
-		<url>scm:git:git@github.com:user/project.git</url>
-		<developerConnection>scm:git:git@github.com:user/project.git</developerConnection>
-	</scm>
+		<connection>scm:git:git@github.com:LembergThe/oms.git</connection>
+		<url>scm:git:git@github.com:LembergThe/oms.git</url>
+		<developerConnection>scm:git:git@github.com:LembergThe/oms.git</developerConnection>
+  	  <tag>HEAD</tag>
+  </scm>
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -354,8 +353,6 @@
 						</execution>
 					</executions>
 					<configuration>
-						<serverId>nexus-releases</serverId>
-						<nexusUrl>http://localhost:8081/nexus/</nexusUrl>
 						<skipStaging>true</skipStaging>
 					</configuration>
 				</plugin>
@@ -363,7 +360,7 @@
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
 			<configuration>
-				<skipTests>false</skipTests>
+				<skipTests>true</skipTests>
 				<classesDirectory>${project.build.directory}/classes</classesDirectory>
 			</configuration>
 		</plugin>
