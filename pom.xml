@@ -37,6 +37,11 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+
+		<repository>
+			<id>maven-proxy</id>
+			<url>${MAVEN_NEXUS_URL}</url>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
@@ -56,8 +61,8 @@
 		<connection>scm:git:git@github.com:LembergThe/oms.git</connection>
 		<url>scm:git:git@github.com:LembergThe/oms.git</url>
 		<developerConnection>scm:git:git@github.com:LembergThe/oms.git</developerConnection>
-  	  	<tag>HEAD</tag>
-  	</scm>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 		<!-- Spring -->
@@ -379,11 +384,6 @@
 					</goals>
 				</execution>
 			</executions>
-			<configuration>
-				<serverId>nexus</serverId>
-				<nexusUrl>http://localhost:8081/nexus/</nexusUrl>
-				<skipStaging>true</skipStaging>
-			</configuration>
 		</plugin>
 		<plugin>
 			<groupId>org.sonatype.maven.plugin</groupId>
